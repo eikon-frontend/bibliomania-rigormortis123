@@ -1,17 +1,76 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bibliomania</title>
-    <link rel="stylesheet" href="scripts/star-rating.min.css" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!-- 🦊 Votre page ici -->
 
-    <!-- 💡 Décommentez cette balise et placez-la dans votre code afin d'afficher le système de note Javascript -->
-    <!-- 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bibliomania</title>
+  <link rel="stylesheet" href="scripts/star-rating.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <div class="contenu">
+    <div class="header">
+      <h1>Détails du livre</h1>
+    </div>
+
+    <div class="cover-stars">
+
+      <img class="cover" src="./img/couvertures/controverses_couverture.jpg" />
+      <p class="book-title">Controverses, une Histoire Juridique et Ethique de la Photographie</p>
+      <p class="author">Par Christian Pirker </p>
+
+      <div class="buttons">
+        <div class="button">
+          <p>Ajouter à la liste lus</p>
+        </div>
+
+        <div class="button">
+          <p>Ajouter à la liste à lire</p>
+        </div>
+      </div>
+      <div class="stars">
+        <img href="./img/star-full.svg">
+      </div>
+
+    </div>
+
+    <div class="section">
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+      </p>
+      <div class="book-details">
+        <p><b>Année de publication:</b> 2008</p>
+        <p><b>Langue:</b> Français</p>
+        <p><b>Genres:</p>
+        <div class="genres">
+          <a class="genre"
+            href="https://www.youtube.com/watch?v=bgTMo0BeLVc&list=PLJBqZ5tPmSMpHQPU9HJZDqZ6CqixetCzp&index=90&pp=gAQBiAQB">Non-fiction</a>
+          <a class="genre"
+            href="https://www.youtube.com/watch?v=bgTMo0BeLVc&list=PLJBqZ5tPmSMpHQPU9HJZDqZ6CqixetCzp&index=90&pp=gAQBiAQB">Livre
+            photo</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Commentaires</div>
+
+    </div>
+
+  </div>
+
+
+  <!-- 🦊 Votre page ici -->
+
+  <!-- 💡 Décommentez cette balise et placez-la dans votre code afin d'afficher le système de note Javascript -->
+  <!-- 
         <select class="star-rating" aria-label="Note utilisateur">
             <option value="">Select a rating</option>
             <option value="5">Excellent</option>
@@ -21,12 +80,13 @@
             <option value="1">Terrible</option>
         </select>
     -->
-    <!-- 💡 Script pour gérer le rating d'un livre -->
-    <script src="scripts/star-rating.min.js"></script>
-    <script>
-      var stars = new StarRating(".star-rating", {
-        tooltip: "Choisissez votre note",
-      });
-    </script>
-  </body>
+  <!-- 💡 Script pour gérer le rating d'un livre -->
+  <script src="scripts/star-rating.min.js"></script>
+  <script>
+    var stars = new StarRating(".star-rating", {
+      tooltip: "Choisissez votre note",
+    });
+  </script>
+</body>
+
 </html>
