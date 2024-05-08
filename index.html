@@ -1,17 +1,139 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bibliomania</title>
-    <link rel="stylesheet" href="scripts/star-rating.min.css" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!-- 🦊 Votre page ici -->
 
-    <!-- 💡 Décommentez cette balise et placez-la dans votre code afin d'afficher le système de note Javascript -->
-    <!-- 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bibliomania</title>
+  <link rel="stylesheet" href="scripts/star-rating.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <div class="contenu">
+    <div class="header">
+      <a href=" ">
+        <img src="./img/back.svg" />
+      </a>
+      <h1>Détails du livre</h1>
+    </div>
+
+    <div class="covertostars">
+
+      <img class="cover" src="./img/couvertures/controverses_couverture.jpg" />
+      <p class="book-title">Controverses, une Histoire Juridique et Ethique de la Photographie</p>
+      <p class="author">Par Christian Pirker </p>
+
+      <div class="buttons">
+        <a href=" " class="button">
+          <img src="./img/lu.svg" />
+          <p>Ajouter à la liste lus</p>
+        </a>
+
+        <a href=" " class="button">
+          <img src="./img/a-lire.svg" />
+          <p>Ajouter à la liste à lire</p>
+        </a>
+      </div>
+      <div class="stars">
+        <div class="star-rating">
+          <img src="./img/rating.svg">
+          <p>4.5/5</p>
+          <small>431 avis</small>
+        </div>
+
+        <a href="">
+          <div class="star-rate"><img src="./img/rate.svg">
+            <p>Noter</p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-title">Description</div>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+      </p>
+      <div class="book-details">
+        <p><b>Année de publication:</b> 2008</p>
+        <p><b>Langue:</b> Français</p>
+        <p><b>Genres:</p>
+        <div class="genres">
+          <a class="genre" href=" ">Non-fiction</a>
+          <a class="genre" href=" ">Livre
+            photo</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Commentaires</div>
+
+      <div class="comment">
+        <img class="comment-profile" src="./img/images-profil/heh.png" />
+        <div class="comment-box">
+          <p>Ajouter un commentaire</p>
+          <a href=" ">
+            <img src="./img/send.svg">
+          </a>
+          </input>
+        </div>
+      </div>
+      <div>
+        <div class="comment-section-comment">
+          <img class="comment-section-profile" src="./img/images-profil/Megamind-vs-the-Doom-Syndicate.png" />
+          <div>
+            <p><b>Jean-Emmanuel Smith</b></p>
+            <img src="./img/star-comment.svg" />
+            <p>Excellent livre ! Je le recommande.</p>
+            <a href=" " class="reply">Répondre</a>
+          </div>
+        </div>
+        <hr />
+        <div class="comment-section-comment">
+          <img class="comment-section-profile" src="./img/images-profil/tbzfjne35zo01.jpg" />
+          <div>
+            <p><b>Patrick Jean Patterson</b></p>
+            <img src="./img/star-comment.svg" />
+            <p>Super intéressant !!! J’ai surtout adorée la partie ou Lorem ipsum dolor sit amet, consectetur
+              adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href=" " class="reply">Répondre</a>
+          </div>
+        </div>
+        <hr />
+        <div class="comment-section-comment">
+          <img class="comment-section-profile" src="./img/images-profil/gykbfdv8bin41.png" />
+          <div>
+            <p><b>Sacagawea </b></p>
+            <img src="./img/star-comment.svg" />
+            <p>Pas mal.</p>
+            <a href=" " class="reply">Répondre</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="nav">
+    <img src="./img/acceuil.svg" />
+    <img src="./img/recherche.svg" />
+    <img src="./img/profil.svg" />
+    <img src="./img/collections.svg" />
+  </div>
+
+
+  <!-- 🦊 Votre page ici -->
+
+  <!-- 💡 Décommentez cette balise et placez-la dans votre code afin d'afficher le système de note Javascript -->
+  <!-- 
         <select class="star-rating" aria-label="Note utilisateur">
             <option value="">Select a rating</option>
             <option value="5">Excellent</option>
@@ -21,12 +143,13 @@
             <option value="1">Terrible</option>
         </select>
     -->
-    <!-- 💡 Script pour gérer le rating d'un livre -->
-    <script src="scripts/star-rating.min.js"></script>
-    <script>
-      var stars = new StarRating(".star-rating", {
-        tooltip: "Choisissez votre note",
-      });
-    </script>
-  </body>
+  <!-- 💡 Script pour gérer le rating d'un livre -->
+  <script src="scripts/star-rating.min.js"></script>
+  <script>
+    var stars = new StarRating(".star-rating", {
+      tooltip: "Choisissez votre note",
+    });
+  </script>
+</body>
+
 </html>
